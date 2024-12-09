@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome!!!!</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    
+    <h2>About Me</h2>
+    <img src="1.jpg" alt="Nisula Damsilu Wijesundara" style="width:150px; height:auto; border-radius:50%; ">
+    <p>Hello! I'm Nisula Damsilu Wijesundara, a first-year Computer Engineering student at Kothalawala Defence University. I’m passionate about technology and software development, and I enjoy working on various projects that challenge my skills and creativity. In my free time, I love exploring new tech trends, working on coding projects, and learning about the latest innovations in engineering </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Shoe Palace Website</strong> A dynamic order management system for a shoe store.</li>
+        <li><strong>Smart Dustbin:</strong> A smart system to segregate waste into dry, wet, and metal compartments.</li>
+        <li><strong>ReadNet Library System:</strong> An online platform for reserving and returning books.</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>PHP and MySQL</li>
+        <li>Problem-Solving</li>
+        <li>C++, Java</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="form.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit" onclick="showAlert()">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Nisula Wijesundara. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

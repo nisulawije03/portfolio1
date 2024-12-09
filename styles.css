@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+header {
+    background: #24305d;
+    color: #e0ffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: rgba(15, 84, 135, 0.62);
+    color: #e0ffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #e0ffff;
+    text-decoration: none;
+    margin: 5px 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    background: rgba(51, 99, 153, 0.06);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+section h2 {
+    border-bottom: 2px solid #24305d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+#about img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #24305d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #336399;
+}
+
+
+footer {
+    text-align: center;
+    background: #24305d;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 600px) {
+
+    nav {
+        justify-content: space-evenly;
+    }
+
+    section {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    nav {
+        justify-content: space-between;
+        padding: 15px 50px;
+    }
+
+    section {
+        max-width: 60%;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    li {
+        margin: 0;
+        width: calc(50% - 10px);
+    }
+}
